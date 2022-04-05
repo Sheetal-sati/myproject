@@ -212,14 +212,12 @@ ul {
 /* info-box starts */
 .info-box {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 40px;
 }
 
 .accounting-box {
-    max-width: 32%;
+    width: 32%;
     display: flex;
     flex-direction: column;
     margin: 7px;
@@ -234,7 +232,6 @@ ul {
 
 .accounting-box-img img {
     max-width: 100%;
-    width: 100%;
 }
 
 .accounting {
@@ -500,55 +497,78 @@ input[placeholder="Email Address"]::placeholder {
 
 /* media queries */
 
-@media (max-width: 576px) {}
-
-
-@media (max-width: 768px) {}
-
-@media (max-width: 992px) {
-    
-    .navv-list {
-        width: 25%;
-        position: absolute;
-        top: 0%;
-        right: 0px;
-        flex-direction: column;
-        background-color: #3486ef;
-        border-radius: 0px 0px 0px 20px;
-        transition: transform 0.3s ease-in;
-        transform: translate(100%); 
-        z-index: 12;
-    }
-    .navv-list .navv-list-item a{
-        color: #fff;
-        margin: 0 auto;
-    }
-    .navv-list .navv-list-item a:hover{
-        color: #404659;
+@media (max-width: 1650px) {
+    .div-one-list li {
+        width: 250px;
     }
 
-    .nav-change {
-        transform: translate(0);
-    }
-
-    .ham {
-        display: block;
-    }
-
-    .change .bar1 {
-        transform: rotate(45deg) translate(8px, 3px);
-    }
-
-    .change .bar2 {
-        opacity: 0;
-    }
-
-    .change .bar3 {
-        transform: rotate(-45deg) translate(9px, -5px);
+    .div-two-lists>ul>li {
+        padding-right: 2.5rem;
     }
 }
 
+@media (max-width: 1400px) {
+    .info-box {
+        margin-left: 70px;
+    }
+    .containers {
+        max-width: 1140px;
+    }
 
+    .accounting-box {
+        width: 30%;
+    }
+
+    .banner2-content h2 {
+        width: 30%;
+    }
+
+    .banner2-content p {
+        width: 26%;
+    }
+
+    .email-bar {
+        padding: 1rem 13.8rem 0.6rem 0.5rem;
+    }
+
+    .div-one {
+        min-width: 100%;
+    }
+
+    .div-one-list li {
+        min-width: 100%;
+        text-align: center;
+    }
+
+    .footer-div1 {
+        width: 35% ;
+    }
+
+    .footer-div2 {
+        width: 40% ;
+    }
+
+    .footer-div3 {
+        width: 0%;
+    }
+
+    .div-two-lists>ul>li {
+        padding-right: 3rem;
+        padding-top: 0.7rem;
+    }
+
+    .footer-container-content {
+        padding-bottom: 35px;
+    }
+
+    .footer-containers {
+        padding: 4rem 5rem;
+    }
+
+    .copyright {
+        padding-top: 3rem;
+    }
+}
 
 @media (max-width: 1250px) {
     .navv-list .navv-list-item {
@@ -584,9 +604,13 @@ input[placeholder="Email Address"]::placeholder {
         justify-content: space-evenly;
     }
 
-    .banner2-content p,
     .banner2-content h2 {
-        min-width: 50%;
+        width: 40%;
+        text-align: center;
+    }
+
+    .banner2-content p {
+        width: 35%;
         text-align: center;
     }
 
@@ -595,7 +619,7 @@ input[placeholder="Email Address"]::placeholder {
     }
 
     .email-bar {
-        padding: 0.8rem 8rem 0.6rem 0.5rem !important;
+        padding: 0.8rem 8rem 0.6rem 0.5rem;
     }
 
     .anchor-a {
@@ -617,15 +641,15 @@ input[placeholder="Email Address"]::placeholder {
     }
 
     .footer-div1 {
-        max-width: 35%;
+       width: 35%;
     }
 
     .footer-div2 {
-        width: 40% !important;
+        width: 40%;
     }
 
     .footer-div3 {
-        width: 0% !important;
+        width: 0% ;
     }
 
     .div-two-lists>ul>li {
@@ -646,73 +670,113 @@ input[placeholder="Email Address"]::placeholder {
     }
 }
 
+@media (max-width: 999px) {
 
-@media (max-width: 1400px) {
+    /* hamburger menu */
+    .navv-list {
+        width: 25%;
+        position: absolute;
+        top: 0%;
+        right: 0px;
+        flex-direction: column;
+        background-color: #3486ef;
+        border-radius: 0px 0px 0px 20px;
+        transition: transform 0.3s ease-in;
+        transform: translate(100%);
+        z-index: 12;
+    }
+
+    .navv-list .navv-list-item a {
+        color: #fff;
+        margin: 0 auto;
+    }
+
+    .navv-list .navv-list-item a:hover {
+        color: #404659;
+    }
+
+    .nav-change {
+        transform: translate(0);
+    }
+
+    .ham {
+        display: block;
+        left: 47%;
+        top: 9%;
+    }
+
+    .change .bar1 {
+        transform: rotate(45deg) translate(8px, 3px);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        transform: rotate(-45deg) translate(9px, -5px);
+    }
+
+    /* hamburger menu */
+
     .containers {
-        max-width: 1180px;
+        width: 800px;
     }
-
+    .accounting h3 {
+        font-size: 21px;
+    }
+    .accounting i {
+        padding: 0.5rem;
+    }
+    .info-box-list {
+        margin: 0.8rem 0.4rem;
+        font-size: 18px;
+        padding-bottom: 0.7rem;
+        margin-right: 1.4rem;
+    }
     .accounting-box {
-        width: 30%;
+        width: 45%;
     }
-
+    .info-box {
+        margin-left: 70px;
+    }
     .banner2-content h2 {
-        width: 30%;
+        width: 50%;
+        font-size: 26px;
     }
-
     .banner2-content p {
-        width: 26%;
+        width: 40%;
+        font-size: 18px;
     }
-
-    .email-bar {
-        padding: 1rem 13.8rem 0.6rem 0.5rem;
+    .div-two-lists>ul>li {
+        padding-right: 1.5rem;
+        padding-top: 0.6rem;
     }
-
-    .div-one {
-        min-width: 100%;
+    .footer-div1, .footer-div2, .footer-div3 {
+        padding-top: 15px;
     }
-
-    .div-one-list li {
-        min-width: 100%;
-        text-align: center;
+    .div-two h5 {
+        padding-bottom: 15px;
     }
-
+    .anchor-a {
+        font-size: 14px;
+    }
     .footer-div1 {
-        width: 35% !important;
-    }
-
-    .footer-div2 {
-        width: 40% !important;
-    }
-
-    .footer-div3 {
-        width: 0% !important;
-    }
-
-    .div-two-lists>ul>li {
-        padding-right: 3rem;
-        padding-top: 0.7rem;
-    }
-
-    .footer-container-content {
-        padding-bottom: 35px;
-    }
-
-    .footer-containers {
-        padding: 4rem 5rem;
-    }
-
-    .copyright {
-        padding-top: 3rem;
+        width: 38%;
+     }
+     .copyright p, .copyright ul li a {
+        font-size: 12px;
     }
 }
 
-@media (max-width: 1650px) {
-    .div-one-list li {
-        width: 250px;
-    }
 
-    .div-two-lists>ul>li {
-        padding-right: 2.5rem;
-    }
-}
+@media (max-width: 768px) {}
+
+
+@media (max-width: 576px) {}
+
+
+
+
+
+
