@@ -38,7 +38,7 @@ body {
     color: black;
     font-family: 'Urbanist', sans-serif !important;
     max-width: 1920px;
-    margin: 0 auto;
+    margin: 0 auto !important;
 }
 
 a {
@@ -184,6 +184,30 @@ ul {
 }
 
 /* header area ends */
+
+
+/* hamburger */
+.ham {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    display: none;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: gray;
+    margin: 5px;
+    transition: .4s;
+}
+
+/* hamburger */
+
 
 /* info-box starts */
 .info-box {
@@ -481,8 +505,49 @@ input[placeholder="Email Address"]::placeholder {
 
 @media (max-width: 768px) {}
 
+@media (max-width: 992px) {
+    
+    .navv-list {
+        width: 25%;
+        position: absolute;
+        top: 0%;
+        right: 0px;
+        flex-direction: column;
+        background-color: #3486ef;
+        border-radius: 0px 0px 0px 20px;
+        transition: transform 0.3s ease-in;
+        transform: translate(100%); 
+        z-index: 12;
+    }
+    .navv-list .navv-list-item a{
+        color: #fff;
+        margin: 0 auto;
+    }
+    .navv-list .navv-list-item a:hover{
+        color: #404659;
+    }
 
-@media (max-width: 992px) {}
+    .nav-change {
+        transform: translate(0);
+    }
+
+    .ham {
+        display: block;
+    }
+
+    .change .bar1 {
+        transform: rotate(45deg) translate(8px, 3px);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        transform: rotate(-45deg) translate(9px, -5px);
+    }
+}
+
 
 
 @media (max-width: 1250px) {
@@ -524,9 +589,11 @@ input[placeholder="Email Address"]::placeholder {
         min-width: 50%;
         text-align: center;
     }
+
     .banner2-content i {
         padding: 1.05rem;
     }
+
     .email-bar {
         padding: 0.8rem 8rem 0.6rem 0.5rem !important;
     }
@@ -548,26 +615,33 @@ input[placeholder="Email Address"]::placeholder {
         min-width: 100%;
         text-align: center;
     }
-    .footer-div1{
-       max-width: 35%;
+
+    .footer-div1 {
+        max-width: 35%;
     }
-    .footer-div2{
-       width: 40% !important;
+
+    .footer-div2 {
+        width: 40% !important;
     }
+
     .footer-div3 {
         width: 0% !important;
     }
+
     .div-two-lists>ul>li {
         padding-right: 3rem;
         padding-top: 0.7rem;
     }
+
     .footer-container-content {
         padding-bottom: 35px;
     }
+
     .footer-containers {
         padding: 4rem 5rem;
     }
-    .copyright{
+
+    .copyright {
         padding-top: 3rem;
     }
 }
@@ -602,26 +676,33 @@ input[placeholder="Email Address"]::placeholder {
         min-width: 100%;
         text-align: center;
     }
-    .footer-div1{
-       width: 35% !important;
+
+    .footer-div1 {
+        width: 35% !important;
     }
-    .footer-div2{
-       width: 40% !important;
+
+    .footer-div2 {
+        width: 40% !important;
     }
+
     .footer-div3 {
         width: 0% !important;
     }
+
     .div-two-lists>ul>li {
         padding-right: 3rem;
         padding-top: 0.7rem;
     }
+
     .footer-container-content {
         padding-bottom: 35px;
     }
+
     .footer-containers {
         padding: 4rem 5rem;
     }
-    .copyright{
+
+    .copyright {
         padding-top: 3rem;
     }
 }
@@ -630,6 +711,7 @@ input[placeholder="Email Address"]::placeholder {
     .div-one-list li {
         width: 250px;
     }
+
     .div-two-lists>ul>li {
         padding-right: 2.5rem;
     }
