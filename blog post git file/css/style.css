@@ -682,7 +682,7 @@ input[placeholder="Email Address"]::placeholder {
         background-color: #3486ef;
         border-radius: 0px 0px 0px 20px;
         transition: transform 0.3s ease-in;
-        transform: translate(100%);
+        transform: translate(100%) scale(0);
         z-index: 12;
     }
 
@@ -696,7 +696,7 @@ input[placeholder="Email Address"]::placeholder {
     }
 
     .nav-change {
-        transform: translate(0);
+        transform: translate(0) scale(1);
     }
 
     .ham {
@@ -720,7 +720,7 @@ input[placeholder="Email Address"]::placeholder {
     /* hamburger menu */
 
     .containers {
-        width: 800px;
+        width: 700px;
     }
     .accounting h3 {
         font-size: 21px;
@@ -730,12 +730,12 @@ input[placeholder="Email Address"]::placeholder {
     }
     .info-box-list {
         margin: 0.8rem 0.4rem;
-        font-size: 18px;
+        font-size: 17px;
         padding-bottom: 0.7rem;
         margin-right: 1.4rem;
     }
     .accounting-box {
-        width: 45%;
+        width: 47%;
     }
     .info-box {
         margin-left: 70px;
