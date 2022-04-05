@@ -347,6 +347,7 @@ ul {
 .banner2-content p {
     font-size: 20px;
     font-weight: 400;
+    width: 25%;
 }
 
 .banner2-content form {
@@ -509,14 +510,10 @@ input[placeholder="Email Address"]::placeholder {
 
 @media (max-width: 1400px) {
     .info-box {
-        margin-left: 70px;
+        margin-left: 60px;
     }
     .containers {
         max-width: 1140px;
-    }
-
-    .accounting-box {
-        width: 30%;
     }
 
     .banner2-content h2 {
@@ -584,7 +581,9 @@ input[placeholder="Email Address"]::placeholder {
     .containers {
         width: 1000px;
     }
-
+    .accounting-box {
+        width: 31%;
+    }
     .accounting h3 {
         font-size: 23px;
     }
@@ -593,6 +592,9 @@ input[placeholder="Email Address"]::placeholder {
         padding: 0.8rem;
     }
 
+    .info-box {
+        margin-left: 40px;
+    }
     .info-box-list {
         margin: 0.9rem 0.4rem;
         font-size: 17px;
@@ -668,6 +670,7 @@ input[placeholder="Email Address"]::placeholder {
     .copyright {
         padding-top: 3rem;
     }
+    
 }
 
 @media (max-width: 999px) {
@@ -759,7 +762,7 @@ input[placeholder="Email Address"]::placeholder {
         padding-bottom: 15px;
     }
     .anchor-a {
-        font-size: 14px;
+        font-size: 13px;
     }
     .footer-div1 {
         width: 38%;
