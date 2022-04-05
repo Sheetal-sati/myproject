@@ -37,6 +37,8 @@ body {
     height: auto;
     color: black;
     font-family: 'Urbanist', sans-serif !important;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 a {
