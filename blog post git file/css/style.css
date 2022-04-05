@@ -423,7 +423,7 @@ input[placeholder="Email Address"]::placeholder {
 }
 
 .div-one-list li {
-    width: 349px;
+    width: 315px;
     height: 131px;
     font-size: 18px;
     line-height: 28px;
@@ -490,41 +490,86 @@ input[placeholder="Email Address"]::placeholder {
         padding: 0.5rem;
         font-size: 17px;
     }
+
     .box .navbarr .news-button {
         padding: 1.1rem 2.3rem;
         font-size: 17px;
     }
+
     .containers {
         width: 1000px;
     }
+
     .accounting h3 {
         font-size: 23px;
     }
+
     .accounting i {
         padding: 0.8rem;
     }
+
     .info-box-list {
         margin: 0.9rem 0.4rem;
         font-size: 17px;
         padding-bottom: 0.9rem;
         margin-right: 1.8rem;
     }
+
     .banner2-content {
         justify-content: space-evenly;
     }
+
     .banner2-content p,
     .banner2-content h2 {
         min-width: 50%;
         text-align: center;
     }
+    .banner2-content i {
+        padding: 1.05rem;
+    }
+    .email-bar {
+        padding: 0.8rem 8rem 0.6rem 0.5rem !important;
+    }
+
     .anchor-a {
         font-size: 16px;
     }
+
     .copyright p,
     .copyright ul li a {
         font-size: 14px;
     }
 
+    .div-one {
+        min-width: 100%;
+    }
+
+    .div-one-list li {
+        min-width: 100%;
+        text-align: center;
+    }
+    .footer-div1{
+       max-width: 35%;
+    }
+    .footer-div2{
+       width: 40% !important;
+    }
+    .footer-div3 {
+        width: 0% !important;
+    }
+    .div-two-lists>ul>li {
+        padding-right: 3rem;
+        padding-top: 0.7rem;
+    }
+    .footer-container-content {
+        padding-bottom: 35px;
+    }
+    .footer-containers {
+        padding: 4rem 5rem;
+    }
+    .copyright{
+        padding-top: 3rem;
+    }
 }
 
 
@@ -532,24 +577,60 @@ input[placeholder="Email Address"]::placeholder {
     .containers {
         max-width: 1180px;
     }
+
     .accounting-box {
         width: 30%;
     }
+
     .banner2-content h2 {
         width: 30%;
     }
+
     .banner2-content p {
         width: 26%;
     }
+
     .email-bar {
         padding: 1rem 13.8rem 0.6rem 0.5rem;
     }
-    .div-one,
-    .footer-div2 {
-        width: 50%;
+
+    .div-one {
+        min-width: 100%;
     }
-    .footer-div1, .footer-div3{
-        width: 47%;
+
+    .div-one-list li {
+        min-width: 100%;
+        text-align: center;
     }
-     
+    .footer-div1{
+       width: 35% !important;
+    }
+    .footer-div2{
+       width: 40% !important;
+    }
+    .footer-div3 {
+        width: 0% !important;
+    }
+    .div-two-lists>ul>li {
+        padding-right: 3rem;
+        padding-top: 0.7rem;
+    }
+    .footer-container-content {
+        padding-bottom: 35px;
+    }
+    .footer-containers {
+        padding: 4rem 5rem;
+    }
+    .copyright{
+        padding-top: 3rem;
+    }
+}
+
+@media (max-width: 1650px) {
+    .div-one-list li {
+        width: 250px;
+    }
+    .div-two-lists>ul>li {
+        padding-right: 2.5rem;
+    }
 }
