@@ -705,7 +705,7 @@ input[placeholder="Email Address"]::placeholder {
     .ham {
         display: block;
         left: 47%;
-        top: 9%;
+        top: 5%;
     }
 
     .change .bar1 {
@@ -749,7 +749,7 @@ input[placeholder="Email Address"]::placeholder {
     }
     .banner2-content p {
         width: 40%;
-        font-size: 18px;
+        font-size: 16px;
     }
     .div-two-lists>ul>li {
         padding-right: 1.5rem;
@@ -773,7 +773,48 @@ input[placeholder="Email Address"]::placeholder {
 }
 
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    
+    .containers {
+        width: 600px;
+    }
+    .box .navbarr .news-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 16px;
+    }
+    .accounting-box {
+        width: 47%;
+    }
+    .accounting {
+        padding: 0 0.9rem 0.8rem;
+    }
+    .accounting i {
+        padding: 0.4rem;
+    }
+    .info-box-list {
+        font-size: 15px;
+    }
+    .info-box-list i {
+        font-size: 12px;
+    }
+    .banner2-content h2 {
+        width: 38%;
+        font-size: 20px;
+    }
+    .banner2-content p {
+        width: 31%;
+        font-size: 14px;
+    }
+    .email-bar {
+        padding: 0.3rem 4.3rem 0.6rem 0rem;
+    }
+    .banner2-content i {
+        padding: 0.8rem;
+    }
+    input[placeholder="Email Address"]::placeholder{
+        font-size: 13px;
+    }
+}
 
 
 @media (max-width: 576px) {}
