@@ -1033,10 +1033,6 @@ input[placeholder="Email Address"]::placeholder {
         padding-right: 0rem;
     }
 
-    .div-one-list li>a>img {
-        width: 40%;
-    }
-
     .navv-list .navv-list-item {
         padding: 0.9rem 1rem;
         font-size: 17px;
@@ -1124,4 +1120,56 @@ input[placeholder="Email Address"]::placeholder {
         width: 30%;
     }
 
+}
+@media (max-width: 300px) {
+    .containers {
+        width: 200px;
+    }
+    .accounting-box {
+        width: 42%;
+    }
+    .banner2-content h2 {
+        font-size: 16px;
+    }
+    .banner2-content p {
+        font-size: 10px;
+    }
+    .email-bar {
+        width: 60%;
+        left: 40px;
+    }
+    .banner2-content i {
+        right: 38px;
+    }
+    .accounting i {
+        display: none;
+    }
+    .accounting {
+        padding: 0 0.8rem 0.1rem;
+    }
+    .footer-containers {
+        padding: 2rem 1.4rem;
+    }
+    .div-one-list li {
+        height: 100px;
+    }
+    .div-two {
+        display: none;
+    }
+    .nav-ul {
+        top: 17%;
+    }
+    .navv-list .navv-list-item {
+        padding: 0.3rem 0.5rem;
+        font-size: 15px;
+    }
+    .box .navbarr .news-button {
+        padding: 0.6rem 1.5rem;
+        font-size: 15px;
+    }
+    .nav-ul {
+        top: 15%;
+        height: 19rem;
+    }
+    
 }
