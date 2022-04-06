@@ -1,4 +1,4 @@
-/* @font-face {
+/* @font-face{
     font-family: 'ActaDisplayW04';
     src: url('/blog/fonts/transfonter.org-20220402-093844/ActaDisplayW04-BoldItalic.eot');
     src: url('/blog/fonts/transfonter.org-20220402-093844/ActaDisplayW04-BoldItalic.ttf') format('embedded-opentype'),
@@ -11,7 +11,7 @@
 }
 
 
-@font-face {
+@font-face{
     font-family: 'Silk Serif';
 
     src: url('/blog/fonts/silk/SilkSerif-Regular.eot');
@@ -69,7 +69,7 @@ ul {
 }
 
 .navbarr {
-    max-width: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -78,12 +78,20 @@ ul {
 
 .navv-list {
     display: flex;
+    padding-top: 20px;
+}
+
+.nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
 }
 
 .navv-list .navv-list-item {
     display: flex;
     padding: .7rem;
-    font-size: 18px;
+    font-size: 20px;
     color: #000000;
     font-weight: 800;
     text-transform: capitalize;
@@ -189,7 +197,7 @@ ul {
 /* hamburger */
 .ham {
     position: absolute;
-    left: 50%;
+    left: 60%;
     top: 5%;
     display: none;
     cursor: pointer;
@@ -201,7 +209,7 @@ ul {
     display: block;
     width: 30px;
     height: 4px;
-    background-color: gray;
+    background-color: #ed6b6d;
     margin: 5px;
     transition: .4s;
 }
@@ -506,12 +514,17 @@ input[placeholder="Email Address"]::placeholder {
     .div-two-lists>ul>li {
         padding-right: 2.5rem;
     }
+
+    .nav-ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 70%;
+    }
 }
 
 @media (max-width: 1400px) {
-    .info-box {
-        margin-left: 60px;
-    }
+
     .containers {
         max-width: 1140px;
     }
@@ -521,13 +534,15 @@ input[placeholder="Email Address"]::placeholder {
     }
 
     .banner2-content p {
-        width: 26%;
+        width: 18%;
     }
 
     .email-bar {
         padding: 1rem 13.8rem 0.6rem 0.5rem;
     }
-
+    .nav-ul {
+        width: 73%;
+    }
     .div-one {
         min-width: 100%;
     }
@@ -538,11 +553,11 @@ input[placeholder="Email Address"]::placeholder {
     }
 
     .footer-div1 {
-        width: 35% ;
+        width: 35%;
     }
 
     .footer-div2 {
-        width: 40% ;
+        width: 40%;
     }
 
     .footer-div3 {
@@ -581,9 +596,11 @@ input[placeholder="Email Address"]::placeholder {
     .containers {
         width: 1000px;
     }
+
     .accounting-box {
         width: 31%;
     }
+
     .accounting h3 {
         font-size: 23px;
     }
@@ -592,9 +609,7 @@ input[placeholder="Email Address"]::placeholder {
         padding: 0.8rem;
     }
 
-    .info-box {
-        margin-left: 40px;
-    }
+
     .info-box-list {
         margin: 0.9rem 0.4rem;
         font-size: 17px;
@@ -643,7 +658,7 @@ input[placeholder="Email Address"]::placeholder {
     }
 
     .footer-div1 {
-       width: 35%;
+        width: 35%;
     }
 
     .footer-div2 {
@@ -651,7 +666,7 @@ input[placeholder="Email Address"]::placeholder {
     }
 
     .footer-div3 {
-        width: 0% ;
+        width: 0%;
     }
 
     .div-two-lists>ul>li {
@@ -664,37 +679,48 @@ input[placeholder="Email Address"]::placeholder {
     }
 
     .footer-containers {
-        padding: 4rem 5rem;
+        padding: 4rem;
     }
 
     .copyright {
-        padding-top: 3rem;
+        padding-top: 2rem;
     }
-    
+
 }
 
 @media (max-width: 999px) {
 
     /* hamburger menu */
-    .navv-list {
-        width: 25%;
+    .nav-ul {
         position: absolute;
-        top: 0%;
-        right: 0px;
+        top: 15%;
+        right: -15px;
         flex-direction: column;
-        background-color: #3486ef;
-        border-radius: 0px 0px 0px 20px;
+        background-color: #ed6b6d;
+        border-radius: 20px 0px 0px 20px;
         transition: transform 0.3s ease-in;
         transform: translate(100%) scale(0);
         z-index: 12;
+        width: 30%;
+        height: 29rem;
+        padding-bottom: 40px;
     }
 
-    .navv-list .navv-list-item a {
+    .navv-list .navv-list-item {
+        padding: 0.9rem;
+        font-size: 18px;
+    }
+
+    .navv-list {
+        flex-direction: column;
+    }
+
+    .navv-list-item a {
         color: #fff;
         margin: 0 auto;
     }
 
-    .navv-list .navv-list-item a:hover {
+    .navv-list-item a:hover {
         color: #404659;
     }
 
@@ -704,8 +730,14 @@ input[placeholder="Email Address"]::placeholder {
 
     .ham {
         display: block;
-        left: 47%;
-        top: 5%;
+
+    }
+
+    .ham-div {
+        position: relative;
+        left: 75%;
+        top: 20px;
+        width: 30%;
     }
 
     .change .bar1 {
@@ -720,107 +752,372 @@ input[placeholder="Email Address"]::placeholder {
         transform: rotate(-45deg) translate(9px, -5px);
     }
 
+
+
     /* hamburger menu */
 
     .containers {
         width: 700px;
     }
-    .accounting h3 {
-        font-size: 21px;
+
+    .info-box-list {
+        font-size: 18px;
     }
+
     .accounting i {
         padding: 0.5rem;
     }
+
+    .accounting h3 {
+        font-size: 24px;
+    }
+
     .info-box-list {
-        margin: 0.8rem 0.4rem;
+        margin: 0.7rem 0.9rem;
         font-size: 17px;
         padding-bottom: 0.7rem;
         margin-right: 1.4rem;
+        font-size: 18px;
     }
+
     .accounting-box {
-        width: 43%;
+        width: 48%;
     }
-    .info-box-list {
-        font-size: 16px;
-    }
+
     .banner2-content h2 {
         width: 50%;
         font-size: 26px;
     }
+
     .banner2-content p {
         width: 40%;
         font-size: 16px;
     }
+
     .div-two-lists>ul>li {
         padding-right: 1.5rem;
         padding-top: 0.6rem;
     }
-    .footer-div1, .footer-div2, .footer-div3 {
+
+    .footer-div1,
+    .footer-div2,
+    .footer-div3 {
         padding-top: 15px;
     }
+
     .div-two h5 {
-        padding-bottom: 15px;
+        padding-bottom: 1px;
     }
+
     .anchor-a {
         font-size: 13px;
     }
+
     .footer-div1 {
         width: 38%;
-     }
-     .copyright p, .copyright ul li a {
+    }
+
+    .copyright p,
+    .copyright ul li a {
         font-size: 12px;
     }
 }
 
 
 @media (max-width: 768px) {
-    
+
     .containers {
-        width: 600px;
+        width: 550px;
     }
+
     .box .navbarr .news-button {
         padding: 0.8rem 1.5rem;
         font-size: 16px;
     }
+
     .accounting-box {
         width: 47%;
     }
+
+    .accounting h3 {
+        font-size: 20px;
+    }
+
     .accounting {
         padding: 0 0.9rem 0.8rem;
     }
+
     .accounting i {
         padding: 0.4rem;
     }
+
     .info-box-list {
-        font-size: 15px;
-    }
-    .info-box-list i {
-        font-size: 12px;
-    }
-    .banner2-content h2 {
-        width: 38%;
-        font-size: 20px;
-    }
-    .banner2-content p {
-        width: 31%;
         font-size: 14px;
     }
+
+    .info-box-list i {
+        font-size: 10px;
+    }
+
+    .banner2-content h2 {
+        width: 40%;
+        font-size: 19px;
+    }
+
+    .banner2-content p {
+        width: 30%;
+        font-size: 13px;
+    }
+
     .email-bar {
         padding: 0.3rem 4.3rem 0.6rem 0rem;
     }
+
     .banner2-content i {
         padding: 0.8rem;
     }
-    input[placeholder="Email Address"]::placeholder{
+
+    input[placeholder="Email Address"]::placeholder {
         font-size: 13px;
+    }
+
+    .div-one {
+        padding-bottom: 20px;
+    }
+
+    .div-two-lists {
+        display: block;
+    }
+
+    .div-two-lists ul {
+        margin-bottom: 0;
+    }
+
+    .footer-div1 {
+        width: 33%;
+    }
+
+    .footer-div2 {
+        width: 33%;
+    }
+
+    .copyright p,
+    .copyright ul li a {
+        font-size: 9px;
+    }
+
+    .div-one-list li {
+        height: 100px;
+    }
+
+    .paging-list li {
+        font-size: 9px;
+        width: 20px;
+        height: 20px;
+        line-height: 2;
     }
 }
 
 
-@media (max-width: 576px) {}
+@media (max-width: 580px) {
+    .containers {
+        width: 400px;
+    }
+
+    .box .navbarr .news-button {
+        padding: 0.6rem 1.3rem;
+        font-size: 14px;
+    }
+
+    .navv-list {
+        width: 80%;
+    }
+
+    .nav-ul {
+        width: 40%;
+    }
+    li {
+        display: flex;
+        justify-content: center;
+    }
+    li.nav-li {
+        width: 71%;
+    }
+    .accounting-box {
+        width: 25%;
+    }
+
+    .footer-lists ul {
+        display: none;
+    }
+
+    .info-box {
+        justify-content: center;
+    }
+
+    .accounting {
+        padding: 0 0.4rem 0.1rem;
+    }
+
+    .accounting h3 {
+        font-size: 11px;
+        padding-top: 0.3rem;
+    }
+
+    .accounting i {
+        padding: 0.3rem;
+        font-size: 7px;
+    }
+
+    .email-bar {
+        padding: 0 3rem 0.4rem 0rem;
+    }
+
+    .banner2-content {
+        padding-top: 5rem;
+        flex-direction: column;
+    }
+
+    .banner2-content h2 {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .banner2-content p {
+        width: 70%;
+        padding-top: 43px;
+        font-size: 12px;
+    }
+
+    .banner2-content i {
+        padding: 0.73rem;
+        font-size: 12px;
+    }
 
 
+    .div-one-list li {
+        font-size: 15px;
+        line-height: 18px;
+    }
 
+    .div-two h5 {
+        font-size: 15px;
+    }
 
+    .anchor-a {
+        font-size: 10px;
+    }
 
+    .copyright {
+        display: block;
+    }
 
+    .copyright p {
+        text-align: center;
+    }
+
+    .copyright ul {
+        justify-content: center;
+    }
+
+    .copyright p,
+    .copyright ul li a {
+        font-size: 8px;
+        padding-right: 0px;
+    }
+
+    .div-two-lists>ul>li {
+        padding-right: 0rem;
+    }
+
+    .div-one-list li>a>img {
+        width: 40%;
+    }
+
+    .navv-list .navv-list-item {
+        padding: 0.9rem 1rem;
+        font-size: 17px;
+    }
+
+    .social-network {
+        padding-top: 0rem;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .containers {
+        width: 250px;
+    }
+
+    .accounting-box {
+        width: 44%;
+    }
+
+    .box .navbarr .news-button {
+        padding: 1.3rem 2rem;
+        font-size: 17px;
+    }
+
+    .email-bar {
+        padding: 0rem;
+    }
+
+    .nav-ul {
+        width: 100%;
+        z-index: 20;
+    }
+
+    .banner2-content i {
+        padding: 0.68rem;
+        font-size: 8px;
+    }
+
+    input[placeholder="Email Address"]::placeholder {
+        font-size: 10px;
+    }
+
+    .div-one-list li {
+        font-size: 11px;
+    }
+
+    .anchor-a {
+        font-size: 8px;
+    }
+
+    .div-two h5 {
+        font-size: 11px;
+    }
+
+    .div-one {
+        padding-bottom: 0px;
+    }
+
+    .copyright ul li a {
+        font-size: 7px;
+    }
+
+    .footer-containers {
+        padding: 2rem 2.5rem;
+    }
+
+    .div-one-list li {
+        width: 100px;
+        height: 80px;
+    }
+
+    .footer-div1,
+    .footer-div2,
+    .footer-div3 {
+        padding-top: 0;
+    }
+
+    .div-one {
+        padding-bottom: 25px;
+    }
+
+    .footer-div1 {
+        width: 30%;
+    }
+
+}
